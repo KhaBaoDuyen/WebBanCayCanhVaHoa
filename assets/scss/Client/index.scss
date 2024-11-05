@@ -11,10 +11,6 @@
 @import'./Page/product_detail';
 @import'./Page/about';
 @import'./Page/login';
-@import'./Page/profile';
-@import'./Page/instruction';
-@import'./Page/baiviet';
-@import'./Page/checkout';
 
 * {
     margin: 0;
@@ -47,10 +43,4 @@ li {
     list-style-type: none;
     padding: none;
     margin: none;
-    font-family: var(--font-family-pri);
-}
-ul{
-    padding: none;
-    margin: none;
-
 }

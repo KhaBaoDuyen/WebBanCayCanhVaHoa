@@ -1,5 +1,4 @@
 footer {
-
    // background: url(/assets/image/icon/background.png)  no-repeat ;
    .footer_top {
       border-top: 4px solid var(--pri-color);
@@ -38,6 +37,8 @@ footer {
       // background-position: center;
       height: 20rem;
 
+
+
          .menu_footer {
             margin: 25% auto;
 
@@ -46,13 +47,14 @@ footer {
                color: var(--text-color-light);
             }
 
-            >li>a {
+            li a {
                color: var(--text-color-light) !important;
+
                &:hover {
-                  color: var(--color-green) !important;
+                  color: var(--color-green);
                }
             }
-
+         
       }
    }
 }

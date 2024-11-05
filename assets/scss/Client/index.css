@@ -1,9 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com");
 :root {
   --pri-color:#07503d;
-  --pri-color-50:#07503d94;
   --color-secondary:#618264;
   --color-green: #79AC78;
   --color-green-light: #e5fbf1;
@@ -42,9 +40,9 @@
 .banner_bottom .menu {
   display: flex !important;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
   flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-between;
 }
 .banner_bottom .logo {
   width: 20%;
@@ -106,8 +104,6 @@
   color: var(--text-color-light);
   position: relative;
   animation: all 10s ease-in-out 2s;
-  width: -moz-max-content;
-  width: max-content;
 }
 .banner_bottom .account:hover .account_dropdown {
   opacity: 1;
@@ -116,22 +112,13 @@
 .banner_bottom .account_title {
   text-decoration: none;
   color: var(--text-color-light);
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.banner_bottom .account_title p {
-  width: 100%;
-  margin: 0 !important;
-  padding-right: 4%;
-  white-space: nowrap;
-  color: var(--text-color-light);
 }
 .banner_bottom .account_title:hover {
   color: var(--color-background-light);
 }
-.banner_bottom .account_title:hover p {
-  color: var(--color-background-light);
+.banner_bottom .account_title p {
+  margin-right: 5px;
+  color: var(--text-color-light);
 }
 .banner_bottom .account_dropdown {
   position: absolute;
@@ -175,25 +162,11 @@
   background-color: var(--pri-color);
 }
 .banner_bottom .cart_shopping {
-  position: relative;
   color: var(--text-color-light);
   margin-left: 2rem;
-  width: -moz-max-content;
-  width: max-content;
 }
-.banner_bottom .cart_shopping .material-symbols-outlined {
+.banner_bottom .material-symbols-outlined {
   font-size: 2rem !important;
-}
-.banner_bottom .cart_shopping .cart_quantity {
-  position: absolute;
-  bottom: 0;
-  left: -5px;
-  background-color: var(--color-price);
-  color: white;
-  border-radius: 50%;
-  padding: 2px 7px;
-  font-size: 12px;
-  font-weight: bold;
 }
 .banner_menu_main {
   background: var(--color-green-light);
@@ -254,11 +227,11 @@ footer .footer_bottom .menu_footer > a {
   font-size: 1.2rem;
   color: var(--text-color-light);
 }
-footer .footer_bottom .menu_footer > li > a {
+footer .footer_bottom .menu_footer li a {
   color: var(--text-color-light) !important;
 }
-footer .footer_bottom .menu_footer > li > a:hover {
-  color: var(--color-green) !important;
+footer .footer_bottom .menu_footer li a:hover {
+  color: var(--color-green);
 }
 
 .section_one {
@@ -468,7 +441,7 @@ section .img-box img:hover {
 }
 .brand .box_category_left .slide_banner .btn_slide {
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: 100%;
 }
 .brand .box_category_left .slide_banner .btn_slide button {
@@ -701,13 +674,9 @@ section .img-box img:hover {
 .product_banner .box_banner .product_banner_left .title_slogan {
   transition: transform 0.3s ease;
   animation: slogan 2s ease-in;
-  font-size: 2.2em;
+  font-size: 2em;
   color: var(--text-color);
   margin-top: -5%;
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-style: italic;
 }
 .product_banner .box_banner .product_banner_right {
   position: relative;
@@ -917,6 +886,7 @@ main article .all_products .card:hover {
   box-shadow: 3px 3px 10px gray;
 }
 
+
 .contact {
   /*  border: 1px solid var(--pri-color);  */
   margin: auto;
@@ -984,12 +954,17 @@ main article .all_products .card:hover {
   padding-bottom: 20px;
 }
 
+.cart {
+  /*    border: 1px solid red;
+      */
+  height: 800px;
+}
 .cart .table {
   width: 100%;
   border-collapse: collapse;
 }
 .cart .table th, .cart .table td {
-  padding: px;
+  padding: 10px;
   text-align: center;
   vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
 }
@@ -1018,6 +993,7 @@ main article .all_products .card:hover {
   border-radius: 5px; /* Bo góc */
   margin: 0 5px; /* Khoảng cách giữa các phần tử */
 }
+
 
 .product_detail .sec_title {
   background: var(--text-color-light);
@@ -1447,7 +1423,7 @@ main article .all_products .card:hover {
   bottom: -5em;
 }
 .banner-about .container .content {
-  /* From Uiverse.io by mrhyddenn */
+
 }
 .banner-about .container .content h1 {
   font-weight: 700;
@@ -1975,630 +1951,6 @@ main article .all_products .card:hover {
   transform: translateX(200%);
 }
 
-.profile {
-  background: url(/assets/image/main/78a2c561ba02033e13510a00e56f5776.jpg) no-repeat;
-  background-size: 100%;
-  padding: 2% 0;
-}
-.profile .sec_profile {
-  height: 40rem;
-  border-radius: 15px;
-  overflow: hidden;
-}
-.profile .sec_profile_left {
-  height: 100%;
-  padding: 2% 0;
-  text-align: end;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background: rgba(150, 150, 150, 0.11) !important;
-}
-.profile .sec_profile_left .box_logo {
-  margin: 0 auto;
-  width: 60%;
-}
-.profile .sec_profile_left .box_logo .logo {
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-.profile .sec_profile_left .box_logo .logo img {
-  width: 100%;
-  height: 100%;
-}
-.profile .sec_profile_left .box_logo h3 {
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-family: "Concert One", sans-serif !important;
-}
-.profile .sec_profile_left .menu {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-.profile .sec_profile_left .menu li {
-  margin: 1% auto !important;
-  display: flex;
-  width: 80%;
-  align-items: center;
-  text-align: center;
-  padding: 1% 2% 1% 4%;
-  border-radius: 30px;
-}
-.profile .sec_profile_left .menu li span {
-  opacity: 0;
-  color: var(--pri-color);
-  margin-right: 10%;
-  padding: 2%;
-  border-radius: 50%;
-  border: 5px solid var(--pri-color);
-  background: var(--text-color-light);
-}
-.profile .sec_profile_left .menu li a {
-  text-align: center;
-  color: var(--color-green);
-}
-.profile .sec_profile_left .menu li:hover {
-  background: var(--pri-color-50);
-}
-.profile .sec_profile_left .menu li:hover a {
-  color: var(--text-color-light);
-}
-.profile .sec_profile_left .menu li:hover span {
-  opacity: 1;
-  border: 5px solid var(--color-secondary);
-}
-.profile .sec_profile_left .menu li:nth-child(1) {
-  background: var(--color-green);
-}
-.profile .sec_profile_left .menu li:nth-child(1) a {
-  color: var(--text-color-light);
-}
-.profile .sec_profile_left .menu li:nth-child(1) span {
-  opacity: 1;
-}
-.profile .sec_profile_right {
-  background: rgba(255, 255, 255, 0.658);
-  height: 100%;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-.profile .sec_profile_right .box_profile {
-  height: 100%;
-  text-align: center;
-  padding: 2%;
-}
-.profile .sec_profile_right .box_profile .avatar {
-  overflow: hidden;
-  height: 17rem;
-  border-radius: 10px;
-  position: relative;
-}
-.profile .sec_profile_right .box_profile .avatar img {
-  width: 100%;
-  height: 100%;
-}
-.profile .sec_profile_right .box_profile h5 {
-  color: var(--pri-color);
-  padding: 3%;
-}
-.profile .sec_profile_right .box_profile label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.profile .sec_profile_right .box_profile .material-symbols-outlined {
-  position: absolute;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  margin-right: 10px;
-  background: rgba(0, 0, 0, 0.178);
-  padding: 2%;
-  border-radius: 50%;
-  right: 1%;
-  bottom: 20%;
-}
-.profile .sec_profile_right .box_profile input[type=file] {
-  display: none;
-}
-.profile .sec_profile_right .my_profile {
-  padding: 2% 1%;
-}
-.profile .sec_profile_right .my_profile h4 {
-  color: var(--color-secondary) !important;
-  font-weight: 700;
-  font-size: 1, 4rem;
-}
-.profile .sec_profile_right .my_profile form {
-  width: 100%;
-}
-.profile .sec_profile_right .my_profile form .box_title {
-  margin-top: 2%;
-  width: 100%;
-}
-.profile .sec_profile_right .my_profile form .box_title label {
-  color: var(--pri-color);
-  font-size: 1, 3rem;
-  font-weight: 700;
-}
-.profile .sec_profile_right .my_profile form .box_title input {
-  width: 100%;
-  border: none;
-  background: none;
-  padding: 1% 2%;
-  border-radius: 10px;
-  box-sizing: border-box;
-  border: 2px solid rgba(0, 128, 0, 0);
-  color: var(--pri-color);
-}
-.profile .sec_profile_right .my_profile form .box_title input:hover {
-  box-sizing: border-box;
-  border: 2px solid var(--pri-color);
-}
-.profile .sec_profile_right .my_profile form .box_title .check_gender input[type=radio]:checked {
-  accent-color: var(--pri-color);
-}
-.profile .sec_profile_right .my_profile form .box_title .check_gender span {
-  margin-right: 5%;
-}
-.profile .sec_profile_right .my_profile form .box_btn button {
-  all: unset;
-  padding: 1% 2%;
-  background: var(--pri-color);
-  color: var(--text-color-light);
-  border-radius: 5px;
-  margin-top: 5%;
-}
-.profile .sec_profile_right .my_profile form .box_btn button:hover {
-  background: var(--color-secondary);
-}
-
-.instruction .title {
-  background: url(/assets/image/instruction/sesion1.png) center;
-  background-size: cover;
-  height: 20vmax;
-  background-repeat: no-repeat;
-}
-.instruction .text_section_1 {
-  padding-top: 120px;
-  font-size: 80px;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 3px 5px black;
-  font-family: "Nanum Myeongjo", serif;
-}
-.instruction .post_1 {
-  border-radius: 1px;
-  background: white;
-  padding-top: 20px;
-  overflow: hidden;
-  display: flex !important;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.instruction .post_1 img {
-  transition: transform 0.3s ease;
-  text-align: center;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.instruction .post_1 img:hover {
-  transform: scale(1.1);
-}
-.instruction .text_post {
-  width: 200px;
-}
-.instruction .text_post h1 {
-  font-size: 1.5em;
-  color: rgb(8, 92, 40);
-  text-align: center;
-  font-family: "Nanum Myeongjo", serif;
-}
-.instruction .text_post p {
-  text-align: center;
-  font-size: 0.8em;
-  font-family: "Nanum Myeongjo", serif;
-}
-.instruction .post_total {
-  background-color: white;
-}
-.instruction .title_2 {
-  background: url(/assets/image/instruction/sesion2.png) center;
-  background-size: cover;
-  height: 20vmax;
-  background-repeat: no-repeat;
-}
-
-.text_section_1 {
-  padding-top: 120px;
-  font-size: 80px;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 3px 5px black;
-  font-family: "Nanum Myeongjo", serif;
-}
-
-.post_total_2 {
-  position: relative;
-  padding-top: 23px;
-  height: 20em;
-  background: white;
-}
-
-/* Định dạng chung cho mỗi bước */
-.step-box {
-  height: 17em;
-  padding: 50px;
-  background-color: hsl(122, 37%, 74%);
-  position: relative;
-  color: #2e7d32;
-  font-size: 16px;
-}
-
-.step-box_6 {
-  height: 17em;
-  padding: 50px;
-  background-color: #59bd5c;
-  position: relative;
-  color: #59bd5c;
-  font-size: 16px;
-  box-shadow: 1px 1px 3px black;
-}
-
-/* Định dạng cho mũi tên */
-.step-box::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #a5d6a7;
-}
-
-/* Định dạng cho vòng tròn chứa số */
-.step-circle {
-  border: 3px solid #1fa924;
-  box-shadow: 1px 1px 5px black;
-  width: 70px;
-  height: 70px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: #2e7d32;
-  position: absolute;
-  top: -50px;
-  left: 80px;
-}
-
-/* Màu sắc khác cho từng bước */
-.step-box:nth-child(1) {
-  background-color: #E0F2E9;
-}
-
-.step-box:nth-child(1)::after {
-  border-left-color: #E0F2E9;
-}
-
-.step-box:nth-child(2) {
-  background-color: #A5D6A7;
-}
-
-.step-box:nth-child(2)::after {
-  border-left-color: #A5D6A7;
-}
-
-.step-box:nth-child(3) {
-  background-color: #81C784;
-}
-
-.step-box:nth-child(3)::after {
-  border-left-color: #81C784;
-}
-
-.step-box:nth-child(4) {
-  background-color: #6dc170;
-}
-
-.step-box:nth-child(4)::after {
-  border-left-color: #6dc170;
-}
-
-.step-box:nth-child(5) {
-  background-color: #64c067;
-}
-
-.step-box:nth-child(5)::after {
-  border-left-color: #64c067;
-}
-
-.box1 {
-  margin-right: 0em;
-  z-index: 5;
-  box-shadow: 1px 1px 20px black;
-}
-
-.box2 {
-  margin-right: 0em;
-  z-index: 4;
-  box-shadow: 1px 1px 20px black;
-}
-
-.box3 {
-  margin-right: 0em;
-  z-index: 3;
-  box-shadow: 1px 1px 20px black;
-}
-
-.box4 {
-  margin-right: 0em;
-  z-index: 2;
-  box-shadow: 1px 1px 20px black;
-}
-
-.box5 {
-  margin-right: 0em;
-  z-index: 1;
-  box-shadow: 1px 1px 20px black;
-}
-
-.box1:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1); /* Tăng kích thước lên 110% khi hover */
-}
-
-.box2:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1); /* Tăng kích thước lên 110% khi hover */
-}
-
-.box3:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1); /* Tăng kích thước lên 110% khi hover */
-}
-
-.box4:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1); /* Tăng kích thước lên 110% khi hover */
-}
-
-.box5:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1); /* Tăng kích thước lên 110% khi hover */
-}
-
-.box6:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1); /* Tăng kích thước lên 110% khi hover */
-}
-
-.title_3 {
-  background: url(/assets/image/instruction/section3.png) center;
-  background-size: cover;
-  height: 20vmax;
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.post_3 {
-  border-radius: 1px;
-  background: white;
-  padding-top: 20px;
-  overflow: hidden;
-  display: flex !important;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.post_3 img {
-  transition: transform 0.3s ease;
-  text-align: center;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.post_3 img:hover {
-  transform: scale(1.1);
-}
-
-.banner_baiviet {
-  background: url(/assets/image/instruction/bannerbaiviet1.jpeg) center;
-  background-size: cover;
-  height: 20vmax;
-  background-repeat: no-repeat;
-  display: flex !important;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.text_bdbv1 {
-  color: white;
-  font-size: 50px;
-  font-family: "Nanum Myeongjo", serif;
-  text-shadow: 1px 3px 5px black;
-  padding-bottom: 100px;
-  position: relative;
-}
-
-.text_bdbv2 {
-  color: white;
-  font-size: 15px;
-  font-family: "Nanum Myeongjo", serif;
-  text-shadow: 1px 3px 5px black;
-  position: absolute;
-}
-
-.title_baiviet {
-  height: 2em;
-  width: 100%;
-  background-color: #E5FBF1;
-}
-
-.news_article img {
-  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng cột */
-  height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
-  display: block;
-}
-
-.aside-title {
-  font-size: 25px;
-  color: rgb(25, 86, 25);
-  display: flex !important;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  font-family: "Nanum Myeongjo", serif;
-}
-
-.news_categories {
-  background-color: #ffffff; /* Màu nền trắng */
-  padding: 20px; /* Khoảng cách bên trong */
-  border-radius: 8px; /* Bo góc */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
-}
-
-/* Định dạng danh sách */
-.news_categories ul {
-  list-style-type: none; /* Loại bỏ dấu đầu dòng */
-  padding: 0; /* Bỏ khoảng cách bên trong */
-  margin: 0; /* Bỏ khoảng cách bên ngoài */
-}
-
-/* Định dạng từng mục danh mục */
-.news_categorie {
-  padding: 10px; /* Khoảng cách bên trong */
-  font-weight: 500; /* Đậm */
-  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi khi hover */
-}
-
-.news_categorie:hover a {
-  color: rgb(28, 107, 28);
-}
-
-/* Định dạng phần tìm kiếm */
-.search_baiviet {
-  background-color: #ffffff; /* Màu nền trắng */
-  padding: 20px; /* Khoảng cách bên trong */
-  border-radius: 8px; /* Bo góc */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-  margin-bottom: 20px; /* Khoảng cách dưới */
-}
-
-/* Định dạng nhãn tìm kiếm (ẩn trên màn hình nhưng vẫn tồn tại cho screen reader) */
-.screen-reader-text {
-  position: absolute; /* Đưa ra ngoài vùng nhìn thấy */
-  left: -9999px; /* Di chuyển ra khỏi màn hình */
-}
-
-/* Định dạng ô input tìm kiếm */
-.search-field {
-  width: 100%; /* Chiếm toàn bộ chiều rộng */
-  padding: 10px; /* Khoảng cách bên trong */
-  border: 1px solid #ced4da; /* Đường viền xám nhạt */
-  border-radius: 4px; /* Bo góc */
-  font-size: 16px; /* Kích thước chữ */
-  transition: border-color 0.3s ease; /* Hiệu ứng chuyển đổi khi hover */
-}
-
-/* Hiệu ứng khi hover hoặc focus vào ô input */
-.search-field:focus {
-  border-color: #007bff; /* Đổi màu đường viền khi focus */
-  outline: none; /* Ẩn outline mặc định */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Đổ bóng khi focus */
-}
-
-/* Định dạng nút tìm kiếm (nếu có) */
-.search_button {
-  background-color: #007bff; /* Màu nền nút */
-  color: #ffffff; /* Màu chữ nút */
-  border: none; /* Bỏ đường viền */
-  padding: 10px 15px; /* Khoảng cách bên trong */
-  border-radius: 4px; /* Bo góc */
-  font-size: 16px; /* Kích thước chữ */
-  cursor: pointer; /* Con trỏ chuột */
-  transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
-}
-
-/* Hiệu ứng khi hover vào nút tìm kiếm */
-.search_button:hover {
-  background-color: #0056b3; /* Đổi màu nền khi hover */
-}
-
-.checkout-page .container {
-  display: flex;
-  padding: 2rem;
-  background-color: #fff;
-}
-.checkout-page .container .content-left {
-  width: 50%;
-}
-.checkout-page .container .content-left form input,
-.checkout-page .container .content-left form textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-.checkout-page .container .content-left form label {
-  font-size: 20px;
-  padding: 5px;
-}
-.checkout-page .container .content-left form img {
-  width: 100px;
-}
-.checkout-page .container .content-left .zalopay {
-  padding: 10px;
-}
-.checkout-page .container .content-right {
-  width: 50%;
-  padding: 2rem;
-  /* background-color: #e5fbf1; */
-  background-image: url(/assets/image/about/checkout-nen-text.jpg);
-  background-size: 100%;
-  background-position-y: bottom;
-  margin-left: 2rem;
-}
-.checkout-page .container .content-right .content1 {
-  height: 100%;
-  position: relative;
-}
-.checkout-page .container .content-right .content1 table {
-  width: 100%;
-}
-.checkout-page .container .content-right .content1 table tr {
-  border-bottom: 1px solid #dee0df;
-}
-.checkout-page .container .content-right .content1 table tr th {
-  padding: 10px;
-}
-.checkout-page .container .content-right .content1 button {
-  margin-top: 20px;
-  position: absolute;
-  right: 0px;
-  width: 150px;
-  background: linear-gradient(to right, #142b16, #598059);
-  padding: 10px;
-  color: white;
-  border: none;
-}
 
 * {
   margin: 0;
@@ -2628,12 +1980,6 @@ a {
 
 li {
   list-style-type: none;
-  padding: none;
-  margin: none;
-  font-family: var(--font-family-pri);
-}
-
-ul {
   padding: none;
   margin: none;
 }/*# sourceMappingURL=index.css.map */

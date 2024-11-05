@@ -146,12 +146,13 @@ section .img-box {
       position: relative;
       overflow: hidden;
       height: 29rem;
+
       .slide_banner {
          // position: relative;
 
          .btn_slide {
             position: absolute;
-            top: 40%;
+            top: 50%;
             width: 100%;
 
             button {

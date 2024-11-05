@@ -99,17 +99,3 @@
    }
 
 }
-
-@mixin button($background, $text , $hover, $border) {
-   button {
-      all: unset;
-      padding: 1% 2%;
-      background: $background;
-      color: $text;
-      border-radius: 5px;
-      margin-top: 5%;
-      &:hover {
-         background: $hover;
-      }
-   }
-}

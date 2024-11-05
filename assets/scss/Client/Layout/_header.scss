@@ -17,11 +17,13 @@
       }
 
       .menu {
+         // margin: 0 auto;
+         // width: 80%;
          display: flex !important;
          flex-direction: row;
-         align-content: center;
-         justify-content: space-between;
          flex-wrap: nowrap;
+         align-content: space-around;
+         justify-content: space-between;
       }
 
       .logo {
@@ -98,7 +100,6 @@
          color: var(--text-color-light);
          position: relative;
          animation: all 10s ease-in-out 2s;
-         width: max-content;
 
          &:hover .account_dropdown {
             opacity: 1;
@@ -108,27 +109,17 @@
          &_title {
             text-decoration: none;
             color: var(--text-color-light);
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-
-
-            p {
-               width: 100%;
-               margin: 0 !important;
-               padding-right: 4%;
-               white-space: nowrap;
-               color: var(--text-color-light);
-            }
 
             &:hover {
                color: var(--color-background-light);
-
-               p {
-                  color: var(--color-background-light);
-               }
             }
+
+            p {
+               margin-right: 5px;
+               color: var(--text-color-light);
+            }
+
+            a {}
          }
 
          &_dropdown {
@@ -178,30 +169,13 @@
       }
 
       .cart_shopping {
-         position: relative;
-         // display: inline-block;
          color: var(--text-color-light);
          margin-left: 2rem;
-         width: max-content;
-
-         .material-symbols-outlined {
-            font-size: 2rem !important;
-         }
-
-         .cart_quantity {
-            position: absolute;
-            bottom: 0;
-            left: -5px;
-            background-color: var(--color-price);
-            color: white;
-            border-radius: 50%;
-            padding: 2px 7px;
-            font-size: 12px;
-            font-weight: bold;
-         }
       }
 
-
+      .material-symbols-outlined {
+         font-size: 2rem !important;
+      }
    }
 
    &_menu_main {
