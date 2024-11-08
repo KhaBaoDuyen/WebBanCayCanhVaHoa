@@ -138,4 +138,33 @@ class AuthController
 
     }
 
+    public static function update($id)
+    {
+        $is_valid = AuthValidation::update();
+        if (!$is_valid) {
+            NotificationHelper::error('update_user', 'Cập nhật thông tin tài khoản thất bại');
+            header("location: /user/$id");
+            /* var_dump($is_valid); */
+            exit;
+        }
+
+        $data = [
+            'username' => $_POST['username'],
+            'email' => $_POST['email'],
+            'address' => $_POST['address'],
+            'phone' => $_POST['phone'],
+            'password' => $_POST['password']
+        ];
+
+        var_dump($data);
+
+        $is_upload = AuthValidation::avatar();
+        if ($is_upload) {
+            $data['avatar'] = $is_upload;
+        }
+
+        $result = AuthHelper::update($id,$data);
+        header("location: /user/$id");
+    }
+
 }

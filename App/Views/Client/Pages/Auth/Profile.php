@@ -11,7 +11,7 @@ class Profile extends BaseView
    {
 ?>
       <main class="p-2 profile d-flex justify-content-center align-items-center ">
-         <section class="sec_profile d-flex col-10 p-3 ">
+         <section class="sec_profile d-flex col-10">
             <aside class="sec_profile_left col-3 ">
                <div class="box_logo">
                   <div class="logo"><img src="/public/assets/Client/image/icon/Logo2.png" alt>
@@ -50,11 +50,6 @@ class Profile extends BaseView
                         <input type="text" name="username" id="username" value="<?= $data['username'] ?>">
                      </div>
 
-                     <div class="box_title ">
-                        <label for class="col-5">Ngày sinh:</label>
-                        <input type="date" name="date" value="14 /10 /2005">
-                     </div>
-
                      <div class="box_title">
                         <label class="col-5">Giới tính:</label> <br>
                         <div class="d-flex check_gender">
@@ -68,7 +63,17 @@ class Profile extends BaseView
                      </div>
                      <div class="box_title">
                         <label for class="col-5">Số điện thoại:</label>
-                        <input type="text" name="phone" id="phone" value="<?= $data['phone'] ?>">
+                        <?php
+                        if ($data['phone']):
+                        ?>
+                           <input type="text" name="phone" id="phone" value="<?= $data['phone'] ?>">
+                        <?php
+                        else:
+                        ?>
+                           <input type="text" name="phone" id="phone" value="Chưa có">
+                        <?php
+                        endif;
+                        ?>
                      </div>
 
                      <div class="box_title">
@@ -78,16 +83,30 @@ class Profile extends BaseView
 
                      <div class="box_title">
                         <label for class="col-5">Mật khẩu:</label>
-                        <input type="password" id="password" name="password" value="<?= $data['password']?>">
+                        <input type="password" id="password" name="password" value="<?= $data['password'] ?>">
                      </div>
 
                      <div class="box_title">
                         <label for class="col-5">Địa chỉ:</label>
-                        <input type="text" name="address" value="cantho">
+                        <?php
+                        if ($data['address']):
+                        ?>
+                           <input type="text" name="address" id="address" value="<?= $data['address'] ?>">
+                        <?php
+                        else:
+                        ?>
+                           <input type="text" name="address" id="address" value="Chưa có">
+                        <?php
+                        endif;
+                        ?>
+                        <div class="box_title">
+                        <label for class="col-5">Avatar:</label>
+                        <input type="file" name="avatar" id="avatar">
+                     </div>
                      </div>
 
                      <div class="box_btn">
-                        <button type>Lưu thông tin</button>
+                        <button type="submit">Lưu thông tin</button>
                         <button type="reset">Reset</button>
                      </div>
                   </form>
@@ -99,7 +118,7 @@ class Profile extends BaseView
                   if ($data['avatar']):
                   ?>
                      <div class="avatar">
-                        <img src="<?= APP_URL ?>/public/assets/Client/image/users/<?= $data['avatar'] ?>" alt>
+                        <img src="<?= APP_URL ?>/public/uploads/users/<?= $data['avatar'] ?>" alt>
                         <label for="file-upload">
                            <span class="material-symbols-outlined">
                               add_a_photo
@@ -122,7 +141,7 @@ class Profile extends BaseView
                   <?php
                   endif;
                   ?>
-                  <h5>Kha Bao Duyen</h5>
+
                </div>
             </article>
          </section>

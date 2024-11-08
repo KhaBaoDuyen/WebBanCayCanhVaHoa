@@ -108,8 +108,8 @@ class AuthValidation
          $is_valid = false;
       }
       // TÊN KHÁCH HÀNG
-      if (!isset($_POST['name']) || $_POST['name'] === '') {
-         NotificationHelper::error('name', 'Họ tên người dùng không được để trống !!!');
+      if (!isset($_POST['password']) || $_POST['password'] === '') {
+         NotificationHelper::error('password', 'Mật khẩu không được để trống !!!');
          $is_valid = false;
       }
       //EMAIL

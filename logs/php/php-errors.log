@@ -3635,3 +3635,92 @@ Stack trace:
 [06-Nov-2024 21:00:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "url" in D:\hoctap\hocki4\BLOCK 2\MONDUAN\WebBanCayCanhVaHoa\App\Views\Client\Home.php on line 428
 [06-Nov-2024 21:02:57 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "url" in D:\hoctap\hocki4\BLOCK 2\MONDUAN\WebBanCayCanhVaHoa\App\Views\Client\Home.php on line 428
 [06-Nov-2024 21:03:29 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "url" in D:\hoctap\hocki4\BLOCK 2\MONDUAN\WebBanCayCanhVaHoa\App\Views\Client\Home.php on line 428
+[08-Nov-2024 15:34:20 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Views\Client\Components\Search.php on line 28
+[08-Nov-2024 16:23:59 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 16:24:01 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 16:24:03 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 16:24:05 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 16:24:07 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 16:24:09 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 20:35:32 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 20:35:34 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[08-Nov-2024 21:11:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "address" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Views\Client\Pages\Auth\Profile.php on line 87
+[08-Nov-2024 21:52:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:52:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:52:37 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:52:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 21:52:43 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:52:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:52:43 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:52:43 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 21:53:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:53:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:53:02 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:53:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 21:54:41 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:54:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:54:41 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:54:41 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 21:56:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:56:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:56:42 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 21:56:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:00:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:00:56 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:00:56 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:00:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:01:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:01:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:01:24 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:01:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:10:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:10:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:10:34 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:10:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:10:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:10:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:10:49 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:10:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:21:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:21:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:21:32 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:21:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:21:41 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:21:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:21:41 Asia/Ho_Chi_Minh] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Validation\AuthValidation.php on line 139
+[08-Nov-2024 22:21:41 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:24:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:25:30 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:26:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:27:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php:119
+Stack trace:
+#0 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php(119): error_log()
+#1 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php(141): App\Models\BaseModel->update()
+#2 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Controllers\Client\AuthController.php(165): App\Helpers\AuthHelper::update()
+#3 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Route.php(104): App\Controllers\Client\AuthController::update()
+#4 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\index.php(125): App\Route::dispatch()
+#5 {main}
+  thrown in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php on line 119
+[08-Nov-2024 22:28:23 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php:119
+Stack trace:
+#0 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php(119): error_log()
+#1 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php(141): App\Models\BaseModel->update()
+#2 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Controllers\Client\AuthController.php(165): App\Helpers\AuthHelper::update()
+#3 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Route.php(104): App\Controllers\Client\AuthController::update()
+#4 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\index.php(125): App\Route::dispatch()
+#5 {main}
+  thrown in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php on line 119
+[08-Nov-2024 22:31:08 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 22:31:21 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php:119
+Stack trace:
+#0 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php(119): error_log()
+#1 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php(141): App\Models\BaseModel->update()
+#2 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Controllers\Client\AuthController.php(165): App\Helpers\AuthHelper::update()
+#3 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Route.php(104): App\Controllers\Client\AuthController::update()
+#4 D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\index.php(125): App\Route::dispatch()
+#5 {main}
+  thrown in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Models\BaseModel.php on line 119
+[08-Nov-2024 22:36:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 23:00:27 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 23:01:12 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
+[08-Nov-2024 23:01:27 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\BLOCK2\mon-du-an-1\duan1_update3\WebBanCayCanhVaHoa\App\Helpers\AuthHelper.php on line 150
