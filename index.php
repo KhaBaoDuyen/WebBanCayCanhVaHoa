@@ -93,13 +93,10 @@ Route::delete('/admin/categories/{id}', 'App\Controllers\Admin\CategoryControlle
 //---------------------------[ TÀI KHOẢN ]---------------------------
 Route::get('/admin/users', 'App\Controllers\Admin\UserController@Index');
 
-Route::get('/admin/users/create', 'App\Controllers\Admin\UserController@create');
-/* Route::post('/admin/users', 'App\Controllers\Admin\UserController@store');
-
 Route::get('/admin/users/{id}', 'App\Controllers\Admin\UserController@edit');
 Route::put('/admin/users/{id}', 'App\Controllers\Admin\UserController@update');
 
-Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete'); */
+Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete'); 
 
 //--------------------------[ ĐƠN HÀNG ]-------------------------------
 Route::get('/admin/order', 'App\Controllers\Admin\OrderController@Index');

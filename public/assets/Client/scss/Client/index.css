@@ -149,7 +149,7 @@
   width: 100%;
 }
 .banner_bottom .account_title p {
-  padding-top: 7%;
+  /* padding-top: 7%; */
   width: 100%;
   margin: 0 !important;
   padding-right: 10%;
@@ -2009,7 +2009,7 @@ main article .all_products .card:hover {
   padding: 2% 0;
 }
 .profile .sec_profile {
-  height: 45rem;
+  height: 40rem;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -2032,7 +2032,7 @@ main article .all_products .card:hover {
 }
 .profile .sec_profile_left .box_logo .logo img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
 }
 .profile .sec_profile_left .box_logo h3 {
   color: white;

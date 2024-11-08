@@ -23,7 +23,7 @@ class HomeController
         $data['products'] = $product->getAllProduct();
 
         $categogy = new CategoryModel();
-        $data['categogy'] = $categogy->getAllCategory();
+        $data['categogy'] = $categogy->getAllProductByStatus();
         // Notification::render();
         // NotificationHelper::unset();
         Header::render();

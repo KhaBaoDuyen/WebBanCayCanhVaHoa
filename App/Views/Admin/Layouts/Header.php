@@ -21,7 +21,7 @@ class Header extends BaseView
             <meta name="description" content="">
             <meta name="author" content="">
             <link rel="icon" type="image/png" href="/public/assets/Client/image/icon/Logo2.png">
-            <title>Caycanhvahoa</title>
+            <title>BLOOM</title>
             <link href="/public/assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
             <link href="/public/assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
             <link href="/public/assets/admin/css/ruang-admin.min.css" rel="stylesheet">

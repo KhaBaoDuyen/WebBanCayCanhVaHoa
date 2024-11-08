@@ -39,6 +39,7 @@ class Index extends BaseView
                                 </thead>
 
                                 <tbody>
+
                                     <tr>
                                         <td>
                                             <img class="img_all" width="40px" height="40px" src="/public/uploads/products/20240807070846.png" alt="img">
@@ -52,35 +53,7 @@ class Index extends BaseView
                                             <a href="#" class="btn btn-sm btn-danger">Xóa</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="img_all" width="40px" height="40px" src="/public/uploads/products/20240807070846.png" alt="img">
-                                        </td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>
-                                            <a href="#" class="btn btn-sm btn-warning">Sửa</a>
-                                            <a href="#" class="btn btn-sm btn-danger">Xóa</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="img_all" width="40px" height="40px" src="/public/uploads/products/20240807070846.png" alt="img">
-                                        </td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>
-                                            <a href="#" class="btn btn-sm btn-warning">Sửa</a>
-                                            <a href="#" class="btn btn-sm btn-danger">Xóa</a>
-                                        </td>
-                                    </tr>
-
-
-
+              
                                 </tbody>
                             </table>
                         </div>

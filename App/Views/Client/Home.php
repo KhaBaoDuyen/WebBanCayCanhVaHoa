@@ -119,8 +119,9 @@ class Home extends BaseView
                            if ($category['id'] % 2 == 0): ?>
                               <li class="m-1 col-3">
                                  <div class="card_category">
-                                    <a href="/product/categories/<?=$category['id']?>">
-                                       <img src="public/uploads/categogies/<?= $category['image']; ?>" alt="" width="100%" height="100%">
+                                    <a href="/product/categories/<?= $category['id'] ?>">
+                                       <img src="public/uploads/categogies/<?= $category['image']; ?>" alt="" width="100%"
+                                          height="100%">
                                        <div class="name_brand">
                                           <h2><?= $category['name']; ?></h2>
                                        </div>
@@ -136,8 +137,9 @@ class Home extends BaseView
                            if ($category['id'] % 2 != 0): ?>
                               <li class="m-1 col-3">
                                  <div class="card_category">
-                                    <a href="/product/categories/<?=$category['id']?>">
-                                       <img src="<?= $category['image']; ?>" alt="" width="100%" height="100%">
+                                    <a href="/product/categories/<?= $category['id'] ?>">
+                                       <img src="/public/uploads/categogies/<?= $category['image']; ?>" alt="" width="100%"
+                                          height="100%">
                                        <div class="name_brand">
                                           <h2><?= $category['name']; ?></h2>
                                        </div>
@@ -162,14 +164,13 @@ class Home extends BaseView
                <h3>Sản phẩm</h3>
                <a href="">Xem tất cả</a>
             </div>
-            <div class="row  box_card col-12">
+            <div class="row box_card col-12">
                <?php
-               if (isset($data) && isset($data['products']) && $data && $data['products']):
+               if (isset($data) && isset($data['products']) && $data['products']):
+                  $productsToDisplay = array_slice($data['products'], 0, 20);
                   ?>
-                  <?php
-                  foreach ($data['products'] as $item):
-                     ?>
-                     <a class="card ">
+                  <?php foreach ($productsToDisplay as $item): ?>
+                     <a class="card">
                         <div class="box_image">
                            <img class="image" src="<?= $item['image'] ?>" alt="" height="100%">
                            <img class="image_hover" src="<?= $item['image_product_url'] ?>" alt="image_hover">
@@ -177,15 +178,17 @@ class Home extends BaseView
 
                         <div class="title">
                            <div class="price">
-                              <span><?= $item['price'] ?> vnd</span>
+                              <span><?= $item['price'] ?> VND</span>
                               <?php if (isset($item['discount_price']) && !empty($item['discount_price'])): ?>
-                                 <span class="price_sales"> <?= $item['discount_price'] ?> </span>
+                                 <span class="price_sales"><?= $item['discount_price'] ?> </span>
                               <?php endif; ?>
                            </div>
                            <h4 class="name_product"><?= $item['name'] ?></h4>
                            <p class="content"><?= $item['short_description'] ?></p>
                         </div>
+
                         <?php
+                        // Tính phần trăm giảm giá nếu có
                         $discount_percentage = round((($item['price'] - $item['discount_price']) / $item['price']) * 100, 2);
                         ?>
                         <?php if (isset($item['discount_price']) && !empty($item['discount_price'])): ?>
@@ -197,6 +200,7 @@ class Home extends BaseView
                   <?php endforeach; ?>
                <?php endif; ?>
             </div>
+
 
             <div class="title_all_product">
                <a href=""> Xem thêm</a>

@@ -29,55 +29,51 @@ class Index extends BaseView
                             <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                                 <thead class="thead-light">
                                     <tr>
+                                        <th>Id</th>
                                         <th>Avatar</th>
                                         <th>Tên đăng nhập</th>
-                                        <th>Mật khẩu</th>
                                         <th>Số điện thoại</th>
                                         <th>Email</th>
+                                        <th>Vai trò</th>
                                         <th>Khác</th>
                                     </tr>
                                 </thead>
 
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <img class="img_all" width="40px" height="40px" src="/public/uploads/products/20240807070846.png" alt="img">
-                                        </td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>
-                                            <a href="#" class="btn btn-sm btn-warning">Sửa</a>
-                                            <a href="#" class="btn btn-sm btn-danger">Xóa</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="img_all" width="40px" height="40px" src="/public/uploads/products/20240807070846.png" alt="img">
-                                        </td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>
-                                            <a href="#" class="btn btn-sm btn-warning">Sửa</a>
-                                            <a href="#" class="btn btn-sm btn-danger">Xóa</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="img_all" width="40px" height="40px" src="/public/uploads/products/20240807070846.png" alt="img">
-                                        </td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>
-                                            <a href="#" class="btn btn-sm btn-warning">Sửa</a>
-                                            <a href="#" class="btn btn-sm btn-danger">Xóa</a>
-                                        </td>
-                                    </tr>
+                                    <?php if (isset($data)): ?>
+                                        <?php foreach ($data as $user): ?>
+                                            <tr>
+                                                <td><?= $user['id'] ?></td>
+                                                <td>
+                                                    <?php if ($user['avatar']): ?>
+                                                        <img title="<?= $user['name'] ?>" style="border-radius: 50%;" class="img_all" width="50px" height="50px"
+                                                            src="/public/uploads/users/<?= $user['avatar'] ?>" alt="img">
+                                                    <?php else: ?>
+                                                        <img title=" <?= $user['name'] ?>" style="border-radius: 50%;" class="img_all" width="50px" height="50px" src="/public/uploads/users/usermacdinh.png" alt="img">
+                                                    <?php endif; ?>
+                                                </td>
+                                                <td><a title="<?= $user['name'] ?>" href="/admin/users/<?= $user['id'] ?>"><?= $user['username'] ?></a></td>
+                                                <td><?= $user['phone'] ?></td>
+                                                <td><?= $user['email'] ?></td>
+                                                <td>
+                                                    <span
+                                                        class="badge p-2 <?= $user['role'] == 1 ? 'badge-success' : 'badge-danger' ?>">
+                                                        <?= $user['role'] == 1 ? 'Người dùng' : 'Quản trị' ?>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <a href="/admin/users/<?= $user['id'] ?>" class="btn btn-sm btn-warning">Sửa</a>
+                                                    <form action="/admin/users/<?= $user['id'] ?>" method="post"
+                                                        style="display: inline-block;"
+                                                        onsubmit="return confirm('Bạn có chắc chắn xóa ngời dùng <?= $user['username'] ?>?')">
+                                                        <input type="hidden" name="method" value="DELETE">
+                                                        <button type="submit" class="btn btn-sm btn-danger">Xoá</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach ?>
+
+                                    <?php endif ?>
 
 
 
