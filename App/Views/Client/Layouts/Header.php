@@ -13,7 +13,7 @@ class Header extends BaseView
       // Kiểm tra nếu người dùng đã đăng nhập
       $isLoggedIn = isset($_SESSION['user']); // Kiểm tra tồn tại session 'user'
       $userName = $isLoggedIn ? $_SESSION['user']['username'] : null;
-      ?>
+?>
       <!DOCTYPE html>
       <html lang="en">
 
@@ -59,9 +59,20 @@ class Header extends BaseView
                         <div class="account">
                            <?php if ($isLoggedIn): ?>
                               <!-- Hiển thị tên người dùng nếu đã đăng nhập -->
-                              <a href="/user/<?=$_SESSION['user']['id']?>" class="d-flex account_title justify-content-center align-items-center">
+                              <a href="/user/<?= $_SESSION['user']['id'] ?>" class="d-flex account_title justify-content-center align-items-center">
                                  <p><?php echo htmlspecialchars($userName); ?></p>
-                                 <img class="img-profile rounded-circle" src="/public/uploads/users/<?=$_SESSION['user']['avatar']?>" style="max-width: 40px">
+                                 <?php
+                                 if ($_SESSION['user']['avatar']):
+                                 ?>
+                                    <img class="img-profile rounded-circle" src="/public/uploads/users/<?= $_SESSION['user']['avatar'] ?>" style="max-width: 40px">
+                                 <?php
+                                 else:
+                                 ?>
+                                    <img class="img-profile rounded-circle" src="/public/uploads/users/20240801230858.jpg" style="max-width: 40px">
+                                 <?php
+                                 endif;
+                                 ?>
+
                                  <!-- <span class="material-symbols-outlined"> account_circle </span> -->
                               </a>
                            <?php else: ?>

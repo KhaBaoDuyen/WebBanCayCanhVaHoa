@@ -28,8 +28,7 @@ class Account extends BaseView
 
         <body>
             <div class="Page-login">
-            <?php Notification::render();?>
-            <?php NotificationHelper::unset();?>
+
                 <div class="container" id="container">
                     <div class="form-container sign-up">
                         <form action="/home-register" method="post">

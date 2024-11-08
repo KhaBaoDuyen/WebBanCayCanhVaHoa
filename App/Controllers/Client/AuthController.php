@@ -153,7 +153,7 @@ class AuthController
             'email' => $_POST['email'],
             'address' => $_POST['address'],
             'phone' => $_POST['phone'],
-            'password' => $_POST['password']
+            'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
         ];
 
         var_dump($data);
